@@ -1,0 +1,360 @@
+body  {
+    font-size: 14px;
+    font-family: 'Open Sans';
+    background-color: grey;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.leftpan {
+    background-color: #ffffff;
+    width: 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: rgb(217, 224, 247);
+    padding: 30px 20px;
+    width: 70%;
+}
+
+.rightpan {
+    width: 20%;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 0 20px;
+}
+
+.heading div {
+    flex-grow: 1;
+    flex: 0 50%;
+}
+
+.heading {
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-container {
+    text-align: right;
+}
+
+.img-section {
+    display: flex;
+    margin-top: 50px;
+}
+
+.img-section img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.buysell {
+    display: flex;
+    align-items: flex-top;
+    margin-top: 15px;
+}
+
+.date {
+    margin-top: 30px;
+    font-size: 10px;
+}
+
+.buysellamount {
+    margin-left: 6%;
+    margin-top: -5px;
+}
+
+.buysellamount span {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.trans {
+    font-size: 10px;
+}
+
+.right-wrapper {
+    padding: 0 20px;
+}
+
+.wrapper,
+.profitpercent,
+.content,
+.transaction .heading,
+.currexc,
+.linegraph .heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftpan {
+    display: flex;
+    flex-direction: column;
+}
+
+.currexc {
+    margin: 30px 0;
+}
+
+.usd,
+.BTC {
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+.BTC {
+    margin-top: 10px;
+}
+
+.envback {
+    height: 200px;
+    width: 100%;
+    background-image: linear-gradient(45deg, rgb(90, 34, 104), rgb(163, 72, 159));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.envback p {
+    color: #fff;
+    padding: 0 20px;
+}
+
+.fa-envelope {
+    font-size: 100px;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: -40px;
+}
+
+.fa-sync-alt {
+    position: absolute;
+    background-color: grey;
+    border-radius: 50%;
+    padding: 5px;
+    margin-top: -5px;
+}
+
+.profitpercent {
+    margin-top: 10px;
+}
+
+.settings {
+    color:  #cc99ff;
+    text-align: left;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.greeting {
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.investProfit {
+    text-align: left;
+    border-right: 1px solid#ebebe0;
+    padding-right: 30px;
+}
+
+.investProfit:last-child {
+    border: none;
+}
+
+
+.content .exchange {
+    padding: 10px 0;
+}
+
+.content .subscription {
+    padding: 10px 0;
+}
+
+.leftpan i {
+    color: grey;
+    width: 100%;
+    padding: 20px 0;
+    font-size: 18px;
+}
+
+.leftpan .fafile {
+    padding: 10px 60px;
+    background-color:rgb(249, 244, 250);
+    border-left: 2px solid blueviolet;
+}
+
+.leftpan .file i {
+    color:  blueviolet;
+}
+
+.fa-info-circle {
+  background: black;
+  border-radius: 50%;
+  border: 2px solid black;
+  color: white;
+  height: 1em;
+  width: 1em;
+}
+
+.fa-credit-card {
+    font-size: 12px;
+}
+
+.fas {
+    color:  #cc99ff;
+}
+
+.fa-long-arrow-up,
+.fa-long-arrow-down,
+.fa-long-arrow-up+span,
+.fa-long-arrow-down+span {
+    color: grey;
+    font-size: 10px;
+}
+
+.amount {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.renewbtn {
+    margin-left: 12px;
+}
+
+.button {
+    color: #cc99ff;
+    border: 1px solid #cc99ff;
+    background-color: white;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+.rightpan {
+    padding: 10px;
+    background-color: white;
+}
+
+.activity {
+    font-size: 12px;
+    text-align: left;
+    margin: 20px 0;
+}
+
+.activity div,
+.activity .fas   {
+    color: grey;
+}
+
+.activity .fas {
+    font-size: 8px;
+    margin-right: 3px;
+}
+
+.balance,
+.donutchart {
+    display: inline-block;
+    width: 45%;
+}
+
+.stockchart,
+.transaction {
+    display: inline-block;
+}
+
+.stockchart {
+    width: 62%;
+}
+
+.transaction {
+    width: 28%;
+}
+
+.linegraph {
+    flex: 0 0 28%;
+    margin-top: 5px;
+}
+
+.linegraph .amount {
+    font-size: 10px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.linegraph .fa-caret-up {
+    color: rgb(3, 245, 3);
+}
+
+.linegraph .fa-caret-down {
+    color: red;
+}
+
+.btc {
+    font-size: 12px;
+    margin-top: 6px;
+    text-align: right;
+    margin-right: 5px;
+}
+
+.btc span {
+    padding: 4px;
+    box-shadow: 0px 0px 5px 0px #e2dfdf;
+    border-radius: 2px;
+}
+
+.heading,
+.totalamount {
+    text-align: left;
+}
+
+.totalamount {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 5px
+}
+
+.totalamount span {
+    font-size: 12px;
+}
+
+.addexchangebtn {
+    margin: 20px 0;
+    float: left;
+}
+
+.stockchart {
+    margin-top: 10px;
+}
+
+#chartContainer1 button{
+    display: none !important;
+}
+
+.chartdiv {
+    width: 100%;
+    height: 400px;
+}
+
+.heading .daysection {
+    flex: none;
+}
+
+.linegraph .heading {
+    font-size: 12px;
+}
+
