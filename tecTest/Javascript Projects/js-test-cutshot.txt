@@ -1,0 +1,177 @@
+var functionfun = (function(a) {
+ delete a;
+ return a;
+ })(0);
+ 
+ console.log(functionfun);
+
+ let s = new Set();
+ s.add(45).add(45).add(10).add(30).add(30);
+ console.log(s);
+
+
+ let a = 100;
+ let b = 200;
+ let c = 300;
+ [a, b, c] = [b, c, a]
+ console.log(a, b, c)
+
+
+ var fix = "null"
+ 
+ if(fix) {
+ console.log("This is wonderful. One of the many amusing things that are possible with javascript.");
+ }
+
+
+function lane(x, y) {
+ console.log("Which is the " + x + " side");
+ return y;
+ }
+ 
+ console.log(lane("left", 6) / lane("middle", 2) / lane("right", 3));
+
+
+console.log(50 + "5" + "5");
+ console.log(90 + +"20" + "7");
+ console.log(7 + -"1" + "2");
+ console.log(+"10" + "11" + "20");
+ console.log( "C" - "B" + "2");
+ console.log( "A" - "B" + 2);
+
+
+const items = ['food', 'water', 'clothes'];
+ items.length = 1;
+ 
+ console.log(items[0]);
+
+
+const items = ['food', 'water', 'clothes'];
+ items.length = 1;
+ 
+ console.log(items[1]);
+
+
+ function sample () {
+ a = 20;
+ var b = 30;
+ }
+ sample();
+ console.log(a);
+ console.log(b);
+
+
+
+const sum = eval('10*10+5');
+function sample () {
+ a = 20;
+ var b = 30;
+ }
+ sample();
+ console.log(a);
+ console.log(b);
+
+ console.log('20' - 10)
+ console.log('11' + 10)
+ console.log(true - 100)
+ console.log(false - 150)
+
+let number = 0;
+ console.log(number++);
+ console.log(++number);
+ console.log(number);
+
+javascript
+ let arr = [1, 2, 5];
+ 
+ arr.splice(-1, 0, 3, 4);
+ 
+ console.log(arr);
+
+var present = (function() {
+ var book = 0;
+ function change(val) {
+ book += val;
+ }
+ return {
+ increment: function() {
+ change(1);
+ },
+ decrement: function() {
+ change(-1);
+ },
+ value: function() {
+ return book;
+ }
+ }; 
+ })();
+ 
+ console.log(present.value());
+ present.increment();
+ present.increment();
+ console.log(present.value());
+ present.decrement();
+ console.log(present.value());
+
+
+ 'use strict'
+ 
+ //regular function
+ let add = function (m,n) {
+ return m+n
+ }
+ //constructor function
+ let SuperHero = function (strength) {
+ if(!new.target) throw 'Vashi: Black sheep';
+ this.strength = strength;
+ }
+ 
+ let Flash = new SuperHero('Fast');
+ let ProfessorX = new SuperHero('Mind Control');
+ 
+ let Planet = function (_planet) {
+ this.setPlanet = function (planet) {
+ _planet = planet;
+ }
+ this.getPlanet = function () {
+ return _planet;
+ }
+ }
+ let ReachPlanet = new Planet("Venus");
+ console.log(ReachPlanet.getPlanet());
+ ReachPlanet.setPlanet("Mars");
+ console.log(ReachPlanet.getPlanet());
+
+
+ (function test() {
+ var test = {
+ property: 'Value',
+ 
+ getPropertyValue: function () {
+ return this.property;
+ }
+ };
+ 
+ var getPropertyValue = test.getPropertyValue;
+ 
+ console.log(
+ getPropertyValue(),
+ test.getPropertyValue()
+ );
+ })();
+
+
+ var upper = 30
+ var lower = 25
+ 
+ var myRandom = Math.floor(Math.random() * (upper - lower + 1) + lower)
+ 
+ console.log(myRandom);
+
+
+
+.grid {
+ display: grid;
+ width: 500px;
+ grid-template-columns: 50px 1fr 2fr;
+ }

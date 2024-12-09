@@ -1,0 +1,21 @@
+=> Create a default JSON of user info having following properties:
+   1)Full Name
+   2)Email id
+   3)Designation
+   4)DOB
+   5)Gender
+   6)Country
+   7)State
+   8)Dist
+
+=> On page load call the user API and display data from the JSON in its respective form fields
+=> Form fields should be editable, on clicking of an update button updated data should display in a table on same page.
+
+
+Note:
+1) It is an edit user profile
+2) Use any UI framework like Bootstrap to get the UI done faster.
+3) For DOB use date-picker.
+4) Keep only two countries 1) India and 2) USA, these can be hard coded. On its change make an ajax call and fetch respective states and set them in states drop-down 
+5) Create separate JSON for each country which will contain its states and districts. The state drop-down will have states of selected country, on state change set the districts drop-down
+6) Keep only 3-4 items inside states and districts

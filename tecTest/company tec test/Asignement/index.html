@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Assignment</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="test.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div><h3 class="text-center">Assignment</h3></div>
+      <form id="form">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Full Name</label>
+        <input type="text" class="form-control" id="fullname" name="fullName">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Designation</label>
+        <input type="text" class="form-control" id="designation" placeholder="Designation" name="designation">
+      </div>
+      <div class="form-group">
+        <label>Date of Birth</label>
+        <input class="input-reg form-control" id="datepicker" name="dob" placeholder="Date of birth" required>
+      </div>
+      <div class="row form-group">
+        <div class="col-xs-4 col-sm-3 smt">
+          <label for="inputgender1">Gender <span class="asterisk">* </span> </label>
+        </div>
+        <div class="col-xs-8 col-sm-9 field-bottom-gap">
+          <input type="radio" name="gender" id="male" value="Male" name="gender">
+          <label for="male">Male</label><br>
+          <input type="radio" name="gender" id="female" value="Female" name="gender">
+          <label for="female">Female</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Country <span class="asterisk">* </span></label>
+        <select id="country" class="classic form-control country" name="inputcountry" required>
+          <option value="">Select Country</option>
+        </select>
+      </div>
+      <div class="clearfix"></div>
+      <div id="selectstate" class="form-group">
+        <label>State</label>
+        <select id="state" class="classic form-control state" name="inputstate" required>
+          <option value="">Select State</option>
+        </select>
+      </div>
+      <div class="clearfix"></div>
+      <div id="selectcity" class="form-group">
+        <label>City</label>
+        <select id="city" class="classic form-control city" name="inputcity" required>
+          <option value="">Select City</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Update</button>
+    </form>
+    <div id="results"></div>
+    </div>
+  </body>
+</html>

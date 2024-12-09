@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Timer Template</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="timer-wrapper">
+            <h1>60 Seconds Timer</h1>
+            <div class="container">
+                <div class="base-timer">
+                    <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <g class="base-timer__circle">
+                            <circle class="base-timer__path-elapsed" cx="50" cy="50" r="45" />
+                            <path
+                                    id="base-timer-path-remaining"
+                                    stroke-dasharray=236
+                                    class="base-timer__path-remaining"
+                                    d="
+                                    M 57.5, 50
+                                    m -45, 0
+                                    a 35,35 0 1,0 75,0
+                                    a 35,35 0 1,0 -75,0
+                                    "
+                            ></path>
+                        </g>
+                    </svg>
+                    <span id="base-timer-label" class="base-timer__label">
+                        <!-- Remaining time label -->
+                    </span>
+                    <div id="countdown"></div>
+                </div>
+                <div class="btn-container">
+                    <button id="btn-start">Start</button>
+                    <button id="btn-reset">Reset</button>
+                </div>
+            </div>
+        </div>
+        <script src="timer.js"></script>
+    </body>
+</html>

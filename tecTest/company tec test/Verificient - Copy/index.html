@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <aside class="leftpan">
+            <div class="fafile">
+                <i class="far fa-file"></i>
+            </div>
+            <div>
+                <i class="fa fa-gift" aria-hidden="true"></i>
+            </div>
+            <div>
+                <i class="fas fa-arrows-alt-h" aria-hidden="true"></i>
+            </div>
+            <div>
+                <i class="fa fa-book"></i>
+            </div>
+        </aside>
+        <section class="container">
+            <div class="content card">
+                <div class="exchange">
+                    <i class="fa fa-info-circle"></i>
+                    <span>Exchange not connected</span>
+                </div>
+                <div class="subscription">
+                    Trial Subscription - 7 more days left
+                    <button class="button renewbtn">Renew Subscription</button>
+                </div>
+            </div>
+            <div class="content">
+                <div class="balance card">
+                    <div class="btc"><span>2.043454 BTC</span></div>
+                    <div class="heading">
+                        <i class="fa fa-credit-card"></i>
+                        <span>Balance</span>
+                    </div>
+                   <div class="totalamount">
+                       <span>&#36;</span>25,200.97
+                   </div>
+                   <div class="profitpercent">
+                       <div class="investProfit">
+                            <i class="fa fa-long-arrow-down"></i>
+                            <span>invested</span>
+                            <div class="amount">&#36; 10,458.00</div>
+                       </div>
+                       <div class="investProfit">
+                            <i class="fa fa-long-arrow-up"></i>
+                            <span>% Profit</span>
+                            <div class="amount">+60%</div>
+                        </div>
+                        <div class="investProfit">
+                            <i class="fa fa-long-arrow-up"></i>
+                            <span>USD Profit</span>
+                            <div class="amount">&#36; 15, 648.38</div>
+                        </div>
+                   </div>
+                   <button class="button addexchangebtn">Add Exchange</button>
+                </div>
+                <div class="donutchart card">
+                    <div id="chartdiv"></div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="linegraph card">
+                    <div class="heading">
+                        <div>
+                            <i class="fa fa-gift"></i>
+                            <span>Portfolio 1</span>
+                        </div>
+                        <div class="daysection">
+                            <span>Day</span>
+                            <div class="amount"><i class="fa fa-caret-up" aria-hidden="true"></i>3.7%</div>
+                        </div>
+                    </div>
+                    <div id="lineGraph" style="height: 200px; width: 100%;"></div>
+                    <div class="profitpercent">
+                        <div class="investProfit">
+                            <i class="fa fa-long-arrow-down"></i>
+                            <span>Week</span>
+                            <div class="amount"><i class="fa fa-caret-down" aria-hidden="true"></i>7%</div>
+                        </div>
+                        <div class="investProfit">
+                            <i class="fa fa-long-arrow-up"></i>
+                            <span>Year</span>
+                            <div class="amount"><i class="fa fa-caret-up" aria-hidden="true"></i>29%</div>
+                        </div>
+                        <div class="investProfit">
+                            <i class="fa fa-long-arrow-up"></i>
+                            <span>All Time</span>
+                            <div class="amount"><i class="fa fa-caret-up" aria-hidden="true"></i>254%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="linegraph card">
+                    <div class="heading">
+                        <div>
+                            <i class="fa fa-gift"></i>
+                            <span>Portfolio 2</span>
+                        </div>
+                        <div class="daysection">
+                            <span>Day</span>
+                            <div class="amount"><i class="fa fa-caret-up" aria-hidden="true"></i>3.7%</div>
+                        </div>
+                    </div>
+                    <div id="lineGraph2" style="height: 200px; width: 100%;"></div>
+                    <div class="profitpercent">
+                        <div class="investProfit">
+                             <i class="fa fa-long-arrow-down"></i>
+                             <span>Week</span>
+                             <div class="amount"><i class="fa fa-caret-down" aria-hidden="true"></i>7%</div>
+                        </div>
+                        <div class="investProfit">
+                             <i class="fa fa-long-arrow-up"></i>
+                             <span>Year</span>
+                             <div class="amount"><i class="fa fa-caret-up" aria-hidden="true"></i>29%</div>
+                         </div>
+                         <div class="investProfit">
+                             <i class="fa fa-long-arrow-up"></i>
+                             <span>All Time</span>
+                             <div class="amount"><i class="fa fa-caret-up" aria-hidden="true"></i>254%</div>
+                         </div>
+                    </div>
+                </div>
+                <div class="linegraph card">
+                    <div class="heading">
+                        <div>
+                            <i class="fa fa-gift"></i>
+                            <span>Portfolio 3</span>
+                        </div>
+                        <div class="daysection">
+                            <span>Day</span>
+                            <div class="amount"><i class="fa fa-caret-up" aria-hidden="true"></i>3.7%</div>
+                        </div>
+                    </div>
+                    <div id="lineGraph3" style="height: 200px; width: 100%;"></div>
+                    <div class="profitpercent">
+                        <div class="investProfit">
+                             <i class="fa fa-long-arrow-down"></i>
+                             <span>Week</span>
+                             <div class="amount"><i class="fa fa-caret-down" aria-hidden="true"></i>7%</div>
+                        </div>
+                        <div class="investProfit">
+                             <i class="fa fa-long-arrow-up"></i>
+                             <span>Year</span>
+                             <div class="amount"><i class="fa fa-caret-up" aria-hidden="true"></i>29%</div>
+                         </div>
+                         <div class="investProfit">
+                             <i class="fa fa-long-arrow-up"></i>
+                             <span>All Time</span>
+                             <div class="amount"><i class="fa fa-caret-up" aria-hidden="true"></i>254%</div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="stockchart card">
+                    <div class="heading">
+                        <i class="fa fa-gift"></i>
+                        <span>chart</span>
+                    </div>
+                    <div id="chartContainer1" style="height: 400px; width: 100%;"></div>
+                </div>
+                <div class="transaction card">
+                    <div class="heading">
+                        <div>
+                            <i class="fas fa-arrows-alt-h"></i>
+                            <span>Transaction</span>
+                        </div>
+                        <div class="btn-container">
+                            <button class="button">see all</button>
+                        </div>
+                        <div class="buysell">
+                            <i style='font-size:24px' class='fas'>&#xf358;</i>
+                            <div class="buysellamount">
+                                <span>Buy</span>
+                                <div class="trans">$250.00</div>
+                            </div>
+                        </div>
+                        <span class="date">APR 20, 2020</span>
+                        <div class="buysell">
+                            <i style='font-size:24px' class='fas'>&#xf35b;</i>
+                            <div class="buysellamount">
+                                <span>Sell</span>
+                                <div class="trans">$250.00</div>
+                            </div>
+                        </div>
+                        <span class="date">APR 16, 2020</span>
+                        <div class="buysell">
+                            <i style='font-size:24px' class='fas'>&#xf35b;</i>
+                            <div class="buysellamount">
+                                <span>Sell</span>
+                                <div class="trans">$250.00</div>
+                            </div>
+                        </div>
+                        <span class="date">APR 10, 2020</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <aside class="rightpan">
+           <div class="right-wrapper">
+            <div class="img-section">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBwgu1A5zgPSvfE83nurkuzNEoXs9DMNr8Ww&usqp=CAU" alt="">
+                <div class="greeting">
+                    Good Morning Evan!
+                    <div class="settings">Settings</div>
+                </div>
+            </div>
+            <div class="activity">
+                 <i class="fas fa-arrows-alt-v"></i>
+                 <span>Recent Activity</span>
+            </div>
+            <div class="activity">
+                 <i class="fas">&#xf062;</i>
+                 <span>1,837 USD = 0.084BTC</span>
+                 <div>1BTC = 8,468 USD</div>
+            </div>
+            <div class="activity">
+                 <i class="fas">&#xf062;</i>
+                 <span>1,837 USD = 0.084BTC</span>
+                 <div>1BTC = 8,468 USD</div>
+             </div>
+             <div class="activity">
+                 <i class="fas">&#xf062;</i>
+                 <span>1,837 USD = 0.084BTC</span>
+                 <div>1BTC = 8,468 USD</div>
+             </div>
+             <hr>
+             <div class="currexc">
+                 <div>
+                     <i class="fas fa-arrows-alt-h"></i>
+                     <span>Exchange</span>
+                 </div>
+                 <div class="btn-container">
+                     <button class="button">usd <i class="fa fa-caret-down"></i></button>
+                 </div>
+             </div>
+             <div class="usd">
+                 1,700.00USD
+             </div>
+             <i class="fas fa-sync-alt"></i>
+             <div class="BTC">
+                 0,674931 BTC
+             </div>
+             <div class="env-container">
+                 <i class="fa fa-envelope" aria-hidden="true"></i>
+                 <div class="envback">
+                     <p>Invite customers and get <b>$10</b> for each</p>
+                     <div class="btn-container">
+                         <button class="button">sent invitation</button>
+                     </div>
+                 </div>
+             </div>
+           </div>
+        </aside>
+    </div>
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.stock.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
